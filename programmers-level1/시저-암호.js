@@ -5,8 +5,7 @@ function solution(s, n) {
 
   s.split('').map((alphabet) => {
     if (alphabet === ' ') {
-      answer += ' ';
-      return;
+      return (answer += ' ');
     }
 
     const textArr = lower.includes(alphabet) ? lower : upper;
