@@ -4,9 +4,7 @@ function solution(s, n) {
   let answer = '';
 
   s.split('').map((alphabet) => {
-    if (alphabet === ' ') {
-      return (answer += ' ');
-    }
+    if (alphabet === ' ') return (answer += ' ');
 
     const textArr = lower.includes(alphabet) ? lower : upper;
     let idx = textArr.indexOf(alphabet) + n;
