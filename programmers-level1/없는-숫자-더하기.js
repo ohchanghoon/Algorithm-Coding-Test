@@ -1,7 +1,12 @@
 function solution(numbers) {
-  let sum = 0;
-  for (let i = 0; i < 10; i += 1) {
-    numbers.includes(i) ? (sum += 0) : (sum += i);
-  }
-  return sum;
+  return numbers.reduce((acc, cur) => acc - cur, 45);
 }
+// let sum = 45;
+
+// numbers.map((num) => {
+//   sum -= num;
+// });
+// console.log(sum);
+
+const numbers = [1, 2, 3, 4, 6, 7, 8, 0];
+solution(numbers);
